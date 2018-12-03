@@ -5,6 +5,7 @@
     <title>Añadir disco</title>
 </head>
 <body>
+   
     <?php
         try {
             $dwes = "mysql:host=localhost;dbname=discografia";
@@ -14,7 +15,7 @@
         }
     
         if($_POST){
-
+            //esto es una prueba para GitHub
             $stmt = $conexion->prepare("INSERT INTO cancion (titulo, album, posicion, duracion, genero,) VALUES (?, ?, ?, ?, ?, ?, ?)");
             // Bind
             $codigo = $_POST['codigo'];
